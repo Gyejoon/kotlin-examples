@@ -40,7 +40,7 @@ Kotlin 에서는 기본적으로 2가지 타입추론 형식을 가지고 있습
   - `val` => immutable
   - `var` => mutable
 
-자바에서와 같이 final을 붙이지 않고 val 키워드를 사용하면 immutable 하게 선언할 수 있습니다.
+자바와는  final을 붙이지 않고 val 키워드를 사용하면 immutable 하게 선언할 수 있습니다.
 
 ```
 var a: String = "intial" // 1
