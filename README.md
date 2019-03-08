@@ -1,6 +1,6 @@
 # kotlin-tutorial
 
-아래의 튜토리얼 문서는 공식 코틀린 사이트를 참고 하였습니다.
+아래의 문서는 공식 코틀린 사이트를 참고 하였습니다.
 
 # kotlin source code organization
 
