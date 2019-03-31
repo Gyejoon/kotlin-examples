@@ -1,8 +1,9 @@
 # kotlin-springwebmvc example
 
-# 개발환경
+# Specification
 
 1. Core
+   - Kotlin 1.3
    - Spring Framework 5+
    - Spring Boot 2+
    - Spring Web Mvc
