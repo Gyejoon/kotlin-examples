@@ -1,4 +1,4 @@
-package com.gyejoon.springwebmvc.blog
+package com.gyejoon.mybatis.blog
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
@@ -6,9 +6,7 @@ import org.junit.jupiter.api.extension.ExtendWith
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager
-import org.springframework.data.domain.Example
 import org.springframework.test.context.junit.jupiter.SpringExtension
-import javax.persistence.Id
 
 /**
  * Created by 00700mm@gmail.com on 2019-03-31
@@ -43,17 +41,5 @@ class RepositoriesTests(@Autowired val entityManager: TestEntityManager,
         val found = userRepository.findById(juergen.login)
 
         assertThat(found.get()).isEqualTo(juergen)
-    }
-
-    @Test
-    fun `Query By Example이 잘 동작하는지 확인`() {
-        val users = userRepository.findAll(Example.of(
-                User("Gyejoon", "Gye", "Joong")
-        ))
-
-        assertThat(users.first().login).isEqualTo("Gyejoon")
-        assertThat(users.size).isEqualTo(1)
-        assertThat(users.first().firstname).isEqualTo("Gye")
-        assertThat(users.first().lastname).isEqualTo("Joong")
     }
 }
