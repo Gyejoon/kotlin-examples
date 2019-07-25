@@ -16,6 +16,7 @@ repositories {
 }
 
 dependencies {
+	implementation("it.ozimov:embedded-redis:0.7.2")
 	implementation("org.springframework.boot:spring-boot-starter-data-redis-reactive")
 	implementation("org.springframework.boot:spring-boot-starter-webflux")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")

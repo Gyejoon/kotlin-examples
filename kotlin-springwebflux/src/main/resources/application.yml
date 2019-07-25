@@ -1,1 +1,6 @@
-
+spring:
+  redis:
+    host: localhost
+    port: 28136
+  profiles:
+    active: local
